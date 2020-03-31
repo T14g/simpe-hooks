@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ResourceList from './ResourceList';
+import UserList from './UserList';
 
 //Use state allow a functional component to use component-level state
 
@@ -10,6 +11,7 @@ const App= () => {
 
     return (
         <div>
+            <UserList />
             <div>
                 <button onClick={()=> setResource('posts')}>Post</button>
                 <button onClick={()=> setResource('todos')}>Todos</button>
